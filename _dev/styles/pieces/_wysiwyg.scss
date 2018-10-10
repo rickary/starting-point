@@ -1,0 +1,41 @@
+.p-wysiwyg {
+
+  blockquote,
+  img,
+  ol, 
+  p, 
+  q,
+  ul {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: disc;
+  }
+  
+  ol {
+    list-style: decimal;
+  }
+  
+    ul,
+    ol {
+      ol, 
+      ul {
+        margin-bottom: 0;
+      }
+    }
+  
+  strong, b {
+    font-weight: $font-weight-bold;
+  }
+  
+  i, em {
+    font-style: italic;
+  }
+  
+  a {
+    color: currentColor;
+    cursor: pointer;
+  }
+
+}

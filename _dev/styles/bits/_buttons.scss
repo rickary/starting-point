@@ -34,12 +34,12 @@ $use-buttons            : false !default;
     //------------------------------------//
 
     .b-btn {
+        cursor: pointer;
         display: inline-block;
-        vertical-align: middle;
-        white-space: nowrap;
         font-family: inherit;
         font-size: 100%;
-        cursor: pointer;
+        vertical-align: middle;
+        white-space: nowrap;
         
         &, &:hover {
             text-decoration: none;      // [9]

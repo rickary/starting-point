@@ -7,7 +7,7 @@
 
 
 //	Box-Sizing
-//	Clearfix
+//	Images
 
 
 
@@ -29,24 +29,11 @@
 
 
 //------------------------------------//
-//  Clearfix
+//  Images
 //------------------------------------//
 
-header, 
-footer, 
-main, 
-div, 
-section, 
-article, 
-nav, 
-dl, 
-ul, 
-ol, 
-aside, 
-blockquote {
-	&:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
+img {
+	max-width: 100%;
+	vertical-align: middle;
+	width: 100%;
 }

@@ -55,7 +55,7 @@ $close-quote 	: "\201D";
 
 	blockquote {
 	    quotes:"#{$open-quote}" "#{$close-quote}";
-	    margin-bottom: $gutter;
+	    margin-bottom: 1rem;
 	}
 
 
@@ -82,7 +82,7 @@ $close-quote 	: "\201D";
 
 	cite {
 		display: block;
-		margin-top: $gutter/2;
+		margin-top: .5rem;
 		
 		text-align: right;
 		text-transform: uppercase;

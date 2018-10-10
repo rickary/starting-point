@@ -3,10 +3,14 @@ starting-point
 
 My starting point for most non-[perch](https://grabaperch.com/) php projects.
 
+**updated: 10/10/18**
+
 ## Getting up and running
 
 
 * **[gulpfile.js](http://gulpjs.com/)**: my gulp taskrunner setup. Edit the defaults in package.json and run `npm install` to grab the dependencies (you'll need gulp as well)
+* for gulp we’re using autoprefixer, set to flex & grid by default
+* supports sass-glob so no need to add loads of files to master.scss
 
 
 
@@ -47,8 +51,6 @@ Default styling for basic elements
   **_site**
   
   **_typography**
-  
-  **_form**
 
   
   
@@ -64,11 +66,9 @@ Styles for content that spans one or more modules. Some are optional and have se
 
   **_buttons**-button classes
   
-  **_media**-the media object
+  **_media**-the media object, uses flexbox
 
   **_embeds**-responsive iframe/object embedding
-
-  **_icons**-default code for icomoon
 
   **_navigation**-simple nav styling
   
@@ -81,20 +81,10 @@ Styles for content that spans one or more modules. Some are optional and have se
  
 Styles for individual UI elements. Use prefixes to group. 
 
-  **_header**-things at the top
-  
-  **_footer**-things at the bottom
-
 
 ### assets/
 
-* **fonts/**–a place for your fonts
-
-* **img/**–put images here
-
 * **js/**–whre your taskrunner compiled js ends up
-
-  **libs/**–html5shiv and jquery. Add/remove other libraries as needed.
 
 * **css/**–where your taskrunner compiled css ends up
 

@@ -27,10 +27,19 @@ $breadcrumb-delimeter	: "\002F";
 @if $use-breadcrumbs == true{
 
 .b-breadcrumbs {
-  @extend .b-nav;
-  
-  li {
-    
+  list-style:none;
+  margin-left:0;
+
+  li{
+    display: inline;
+
+    &,
+    > a{
+        display:inline-block;
+        *display:inline;
+        zoom:1;
+    }
+
     // Style root
     &:first-child { font-weight: bold;}
       
@@ -40,7 +49,6 @@ $breadcrumb-delimeter	: "\002F";
     // Un-link current  
     &:last-child a { text-decoration: none; cursor: text; color: black;}
   }
-  
 }
 
 }

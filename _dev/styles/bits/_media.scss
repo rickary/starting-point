@@ -6,6 +6,8 @@
 
 //  Hat-tip:
 //  http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+//  +
+//  https://www.quackit.com/css/flexbox/tutorial/create_a_media_object_with_flexbox.cfm
 
 
 
@@ -15,7 +17,7 @@
 //  Config
 //------------------------------------//
 
-$use-media      : true !default;
+$use-media      : false !default;
 
 
 
@@ -32,8 +34,8 @@ $use-media      : true !default;
     //------------------------------------//
 
     .b-media {
-        display: block;
-        @extend %clearfix;
+        align-items: flex-start;
+        display: flex;
     }
 
 
@@ -44,25 +46,18 @@ $use-media      : true !default;
     //  Object
     //------------------------------------//
 
-    .b-media__img, 
     .b-media__object {
-        float: left;
-        margin-right: $gutter;
+        margin-right: 1rem;
     }
 
 
-    // Reverse image location
+    // Reverse object location
     .b-media__img--rev, 
     .b-media__object--rev {
-        float: right;
-        margin-left: $gutter;
+        margin-left: 1rem;
+        margin-right: 0;
+        order: 1;
     }
-
-
-        .b-media__img img,
-        .b-media__img--rev img {
-            display: block;
-        }
 
 
 
@@ -73,7 +68,7 @@ $use-media      : true !default;
     //------------------------------------//
 
     .b-media__body {
-        overflow:hidden;
+        flex: 1;
     }
 
 

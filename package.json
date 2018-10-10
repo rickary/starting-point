@@ -1,21 +1,24 @@
 {
-  "name": "starting-point",
-  "version": "3.0.0",
-  "description": "Copyright 2017 Rick Chadwick",
+  "name": "thors-tipi",
+  "version": "1.0.0",
+  "description": "Copyright 2018 Rick Chadwick",
   "private": true,
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-autoprefixer": "",
+    "gulp-concat": "",
     "gulp-cssnano": "^2.1.0",
     "gulp-header": "",
+    "gulp-jshint": "",
     "gulp-notify": "",
     "gulp-sass": "",
-    "gulp-concat": "",
+    "gulp-sass-glob": "",
     "gulp-uglify": "",
     "jshint": "",
-    "gulp-jshint": ""
+    "minimatch": "^3.0.2"
   },
   "author": {
-    "email": "rick@rickchadwick.co.uk",
+    "email": "rick@rickmakeswebsites.com",
     "name": "rickary"
   }
 }
