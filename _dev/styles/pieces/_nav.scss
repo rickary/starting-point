@@ -1,0 +1,74 @@
+//------------------------------------//
+//  Navigation
+//------------------------------------//
+
+.p-nav {
+  @include mq($bp-nav-break - 1px, max) {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    background: red;
+    color: white;
+    width: 300px;
+    transition: left 0.1 ease-in-out;
+  }
+}
+
+  body.nav-active .p-nav {
+    right: 0;
+  }
+
+
+
+
+
+//------------------------------------//
+//  Mobile Trigger
+//------------------------------------//
+
+// <a href="#" class="p-nav__trigger js-triggerNav"><span></span></a>
+
+/* 
+  <script>
+  var navTrigger = document.querySelector(".js-triggerNav");
+
+  navTrigger.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.body.classList.toggle("nav-active");
+  });
+  </script>
+*/
+
+.p-nav__trigger {
+  display: none;
+
+  @include mq($bp-nav-break - 1px, max) {
+    background-color: white;
+    display: block;
+    height: 30px;
+    padding-left: 7px;
+    padding-top: 8px;
+    position: absolute;
+    right: 20px;
+    text-decoration: none;
+    top: 15px;
+    transition: right 0.1s ease-in-out;
+    width: 30px;
+    z-index: 9;
+
+    span {
+      @include burger(17px, 3px, 3px, red);
+    }
+  }
+}
+
+  body.nav-active .p-nav__trigger {
+    background-color: white;
+
+    span { 
+      @include burger-to-cross;
+      &::before, &::after {
+        background-color: red;
+      }
+    }
+  }
