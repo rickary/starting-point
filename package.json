@@ -1,6 +1,6 @@
 {
-  "name": "thors-tipi",
-  "version": "1.0.0",
+  "name": "starting-point",
+  "version": "2.0.0",
   "description": "Copyright 2018 Rick Chadwick",
   "private": true,
   "devDependencies": {
